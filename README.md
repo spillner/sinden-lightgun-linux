@@ -88,11 +88,19 @@ This section will serve as a "quick start" guide for a few use-cases. Please see
 
 You can install the [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader) plugin [Reshadeck](https://github.com/safijari/Reshadeck). Aafter you have done this, download and install [Border.fx](https://github.com/Otakumouse/stormshade/blob/master/v4.X/reshade-shaders/Shader%20Library/Recommended/Border.fx) with this extension. This is the Steam Deck version of [ReShade](https://reshade.me/). Copy the shader file to `${HOME}/.local/share/gamescope/reshade/shaders`. Other files are marked executable, but I'm not sure if that is required. Restart Steam or reload the plugin from Decky Loader.
 
-More readining:
+Another option for running Reshade shaders under Linux is [vkBasalt](https://github.com/DadSchoorse/vkBasalt).
+
+More reading:
 * https://www.sindenwiki.org/wiki/Reshade
 
 ### All other Linux systems
-TODO
+
+The [Sinden Wiki](https://www.sindenwiki.org/wiki/Linux_Unix_Guide) contains a link to [an overlay](https://github.com/AaronBPaden/whiteborder-aaronbpaden.gmail.com) for systems running the [GNOME](https://gnome.org) desktop enviroment.
+
+Users on KDE (including the Steam Deck's desktop mode) or other QML-compatible compositors can use [this applet](https://github.com/spillner/kde-screen-borders) instead.
+
+Full-screen games and emulators using a Vulkan backend (including [DXVK](https://github.com/doitsujin/dxvk) for DirectX games, or Mesa's [Zink](https://docs.mesa3d.org/drivers/zink.html) driver for OpenGL applications) can use [this Vulkan plugin](https://github.com/spillner/vulkan-screen-border).  The Proton compatibility layer built into Steam already contains DXVK support, but the `vulkan-screen-border` plugin will need to be manually installed.
+
 
 ## Finish
 
